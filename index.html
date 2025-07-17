@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irfan Emir - Personal Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: url('../img/mountain.jpg') no-repeat center center/cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+    }
+
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 60px;
+      width: 90px;
+    }
+
+    .press-button {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      background-color: #e9e9e9;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .press-button:hover {
+      background-color: #d3d3d3;
+      transform: translateX(-50%) scale(1.1);
+    }
+
+    .press-button a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .bio-box {
+      position: absolute;
+      top: 190px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: justify;
+      line-height: 1.7;
+      z-index: 2;
+    }
+
+    .bio-box span {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .profile-pic {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100vh;
+      max-height: 100vh;
+      z-index: 1;
+    }
+
+    .footer-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: rgba(255, 255, 255, 0.95);
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      z-index: 3;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .socials img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .phone-number {
+      margin-left: 10px;
+      padding: 5px 12px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+
+    <!-- LOGO -->
+    <img src="../img/ChatGPT_Image_Jul_8__2025__12_31_13_AM-removebg-preview.png" class="logo" alt="Logo" />
+
+    <!-- BUTTON -->
+    <button class="press-button">
+      <a href="Untitled-2.html">PRESS HERE</a>
+    </button>
+
+    <!-- BIODATA TEXT -->
+    <div class="bio-box">
+      <p>
+        My name is Irfan Emir, a 19-year-old student currently studying at Universiti Teknologi MARA (UiTM) Alor Gajah. I have a strong passion for gaming and spend most of my free time exploring different game genres and mechanics. Among my favourite games are <span>Katana ZERO</span>, <span>Roblox</span>, <span>Fortnite</span>, <span>Dead Cells</span>, and <span>Left 4 Dead</span>. Each of these games fuels my interest in fast-paced action, creativity, and strategic gameplay. As a student, I enjoy balancing my academic life with my hobbies, especially in areas related to digital media and interactive entertainment.
+      </p>
+    </div>
+
+    <!-- BIG PICTURE OF YOU -->
+    <img src="../img/gambar_aku_posing-removebg-preview.png" alt="Irfan Posing" class="profile-pic" />
+
+    <!-- FOOTER WHITE BAR -->
+    <div class="footer-bar">
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../img/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#">
+          <img src="../img/phone-call.png" alt="WhatsApp" />
+        </a>
+        <div class="phone-number">01162387834</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
